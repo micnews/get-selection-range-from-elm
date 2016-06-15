@@ -1,13 +1,13 @@
-# get-selection-from-elm 
+# get-selection-range-from-elm 
 
-window.getSelection() but only if it&#39;s within an element
+window.getSelection().rangeAt(0) but only if it exists &amp; is within an element
 
 ## Installation
 
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
 
 ```sh
-npm install get-selection-from-elm --save
+npm install get-selection-range-from-elm --save
 ```
 
 ## Usage

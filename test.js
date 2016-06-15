@@ -17,7 +17,7 @@ test('no selection', t => {
   t.is(actual, expected);
 });
 
-test('selection, but not within elm', t => {
+test('selection, not within elm', t => {
   const elm1 = document.body.appendChild(document.createElement('div'));
   const elm2 = document.body.appendChild(document.createElement('div'));
   setNewSelectionRange(elm2, 0, elm2, 0);
@@ -26,16 +26,25 @@ test('selection, but not within elm', t => {
   t.is(actual, expected);
 });
 
-test('selection, but within elm', t => {
+test('selection, within elm & no size', t => {
   const elm = document.body.appendChild(document.createElement('div'));
   setNewSelectionRange(elm, 0, elm, 0);
   const actual = getSelectionRangeFromElm(elm);
+  const expected = null;
+  t.is(actual, expected);
+});
+
+test('selection, within elm & with size', t => {
+  const elm = document.body.appendChild(document.createTextNode('beep boop'));
+  setNewSelectionRange(elm, 0, elm, 3);
+  const actual = getSelectionRangeFromElm(elm);
   const expectedContainer = elm;
-  const expectedOffset = 0;
+  const expectedStartOffset = 0;
+  const expectedEndOffset = 3;
   t.is(actual.startContainer, expectedContainer);
   t.is(actual.endContainer, expectedContainer);
-  t.is(actual.startOffset, expectedOffset);
-  t.is(actual.endOffset, expectedOffset);
+  t.is(actual.startOffset, expectedStartOffset);
+  t.is(actual.endOffset, expectedEndOffset);
 });
 
 test('selection, startContainer within elm but not endContainer', t => {
