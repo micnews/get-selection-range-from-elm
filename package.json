@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/micnews/get-selection-from-elm.git"
+    "url": "git+https://github.com/micnews/get-selection-range-from-elm.git"
   },
   "author": "mic.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/micnews/get-selection-from-elm/issues"
+    "url": "https://github.com/micnews/get-selection-range-from-elm/issues"
   },
-  "homepage": "https://github.com/micnews/get-selection-from-elm#readme",
+  "homepage": "https://github.com/micnews/get-selection-range-from-elm#readme",
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "babel-core": "^6.9.1",
