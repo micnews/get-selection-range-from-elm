@@ -1,6 +1,6 @@
 {
   "name": "get-selection-range-from-elm",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "window.getSelection().rangeAt(0) but only if it exists & is within an element",
   "main": "dist/index.js",
   "scripts": {
