@@ -30,8 +30,13 @@ test('selection, within elm & no size', t => {
   const elm = document.body.appendChild(document.createElement('div'));
   setNewSelectionRange(elm, 0, elm, 0);
   const actual = getSelectionRangeFromElm(elm);
-  const expected = null;
-  t.is(actual, expected);
+  const expectedContainer = elm;
+  const expectedStartOffset = 0;
+  const expectedEndOffset = 0;
+  t.is(actual.startContainer, expectedContainer);
+  t.is(actual.endContainer, expectedContainer);
+  t.is(actual.startOffset, expectedStartOffset);
+  t.is(actual.endOffset, expectedEndOffset);
 });
 
 test('selection, within elm & with size', t => {
