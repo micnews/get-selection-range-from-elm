@@ -22,7 +22,7 @@
   "homepage": "https://github.com/micnews/get-selection-range-from-elm#readme",
   "devDependencies": {
     "babel-cli": "^6.10.1",
-    "babel-core": "^6.9.1",
+    "babel-core": "^6.14.0",
     "babel-preset-es2015": "^6.9.0",
     "babel-tape-runner": "^2.0.1",
     "babelify": "^7.3.0",
