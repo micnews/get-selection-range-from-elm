@@ -27,7 +27,7 @@
     "babel-tape-runner": "^2.0.1",
     "babelify": "^7.3.0",
     "browserify": "^13.0.1",
-    "devtool": "^2.0.2",
+    "devtool": "^2.3.0",
     "faucet": "0.0.1",
     "package-json-to-readme": "^1.5.1",
     "semistandard": "^8.0.0",
